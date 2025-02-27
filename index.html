@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background-color: #000000;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #000033;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0066cc 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        /* Hero section styles */
+        #hero {
+            min-height: 400px;
+            background: url('https://source.unsplash.com/random/1600x900/?coding') no-repeat center center/cover;
+            text-align: center;
+            color: #ffffff;
+        }
+        #hero h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        #hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* About section styles */
+        #about {
+            padding: 50px 0;
+            background: #000033;
+        }
+        #about h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Projects section styles */
+        #projects {
+            padding: 50px 0;
+        }
+        #projects h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .project-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            padding-bottom: 20px;
+        }
+        .project-card {
+            flex: 0 0 auto;
+            width: 300px;
+            margin-right: 20px;
+            background: #000033;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .project-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        /* Hire me section styles */
+        #hire-me {
+            padding: 50px 0;
+            background: #000033;
+            text-align: center;
+        }
+        #hire-me h2 {
+            margin-bottom: 20px;
+        }
+
+        /* Contact form styles */
+        #contact {
+            padding: 50px 0;
+        }
+        #contact h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #0066cc;
+            background-color: #000033;
+            color: #ffffff;
+        }
+        .form-group textarea {
+            height: 150px;
+        }
+        button[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #0066cc;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: #004c99;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #000033;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        /* Responsive design */
+        @media(max-width: 768px) {
+            header #branding,
+            header nav,
+            header nav li {
+                float: none;
+                text-align: center;
+                width: 100%;
+            }
+            header {
+                padding-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Portfolio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h1>I am a Web Developer</h1>
+            <p>Crafting beautiful and functional websites</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a fornt-end web developer. I can provide clean code and pixel perfect design. 
+                I am also make the website more and more interactive with web animations.
+                I can provide clean code and pixel perfect desgin. A responsive desgin make your 
+                website accessible to all users, regardless of their device.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="project-container">
+                <div class="project-card">
+                    <img src="code.jpg" alt="Project 1">
+                    <h3>Coder</h3>
+                    <p>Every website should be built with two primary goals: Firstly, it needs
+                        to work across all devices. Secondly, it needs to be fast as possible.
+                    </p>
+                </div>
+                <div class="project-card">
+                    <img src="desgin.jpg" alt="Project 2">
+                    <h3>Desginer</h3>
+                    <p>Every website should be built with two primary goals: Firstly, it needs
+                        to work across all devices. Secondly, it needs to be fast as possible.</p>
+                </div>
+                <div class="project-card">
+                    <img src="developer.jpg" alt="Project 3">
+                    <h3>Developer</h3>
+                    <p>Every website should be built with two primary goals: Firstly, it needs
+                        to work across all devices. Secondly, it needs to be fast as possible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hire-me">
+        <div class="container">
+            <h2>Let Me Get You A Beautiful Website</h2>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Developer Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
